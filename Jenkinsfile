@@ -1,9 +1,14 @@
 pipeline {
   agent any
   stages {
-    stage('hello') {
+    stage('verify k6') {
       steps {
-        bat 'echo "Hello World"'
+        bat 'k6 version'
+      }
+    }
+    stage('run k6 test') {
+      steps {
+        bat 'k6 run script.js'
       }
     }
   }
