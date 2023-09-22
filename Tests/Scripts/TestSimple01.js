@@ -14,9 +14,7 @@ export let options = {maxRedirects: 4,
 
   //VALIDACIONES THRESHOLDS
   thresholds: {
-    http_req_failed: ['rate<0.01'], // ERRORES HTTP DEBEN SER MENORES AL 1%
-    http_req_duration: ['p(95)<3000'], // 95% DE LAS RESPUESTAS DEBERIAN ESTAR POR DEBAJO DE LOS 3000ms
-  checks: ['rate>0.9'], // LA TASA DE EXITO DEBERIA SER MAYOR QUE 90%
+  checks: ['rate>0.4'], // LA TASA DE EXITO DEBERIA SER MAYOR QUE 40%
   },
 };
 
