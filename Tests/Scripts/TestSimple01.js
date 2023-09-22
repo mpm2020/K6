@@ -10,7 +10,7 @@ import { group } from "k6";
 
 export let options = {maxRedirects: 4,
   duration: '10s',
- vus: 100,
+ vus: 10,
 
   //VALIDACIONES THRESHOLDS
   thresholds: {
